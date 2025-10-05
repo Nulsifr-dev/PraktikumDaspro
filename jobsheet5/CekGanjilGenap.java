@@ -6,7 +6,7 @@ public class CekGanjilGenap {
     public static void main(String[] args) {
         Scanner mra = new Scanner(System.in);
 
-        System.out.println("--- Program Cek Bilangan Genap atau Ganjil ---");
+        System.out.println("--- Cek Bilangan Genap atau Ganjil ---");
         System.out.print("Masukkan sebuah angka: ");
         int angka = mra.nextInt();
 
