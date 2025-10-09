@@ -65,7 +65,7 @@ public class LulusSemesterMRA20 {
         System.out.println(String.format("\nRata-rata Nilai Akhir\t: %.2f",ratanilaiakhir));
         System.out.println("Status Semester\t\t: "+statussemester);
 
-        
+        mra.close();
     }
     
 }
