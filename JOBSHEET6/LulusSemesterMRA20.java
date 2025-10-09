@@ -1,4 +1,4 @@
-package jobsheet5;
+package JOBSHEET6;
 import java.util.Scanner;
 public class LulusSemesterMRA20 {
     public static void main(String[] args) {
@@ -56,13 +56,13 @@ public class LulusSemesterMRA20 {
         
         System.out.println("\nMata Kuliah\t\t\tUTS\tUAS\tTUGAS\tNILAI AKHIR\tNILAI HURUF\tSTATUS");
         System.out.println("==================================================================================================");
-        System.out.println(String.format("ALgoritma pemrograman\t\t%s\t%s\t%s\t%s\t\t%s\t\t%s",uts,uas,tugas,nilaiakhir1,huruf,status));
-        System.out.println(String.format("Struktur Data\t\t\t%s\t%s\t%s\t%s\t\t%s\t\t%s",uts2,uas2,tugas2,nilaiakhir2,huruf2,status2));
+        System.out.println(String.format("ALgoritma pemrograman\t\t%s\t%s\t%s\t%.2f\t\t%s\t\t%s",uts,uas,tugas,nilaiakhir1,huruf,status));
+        System.out.println(String.format("Struktur Data\t\t\t%s\t%s\t%s\t%.2f\t\t%s\t\t%s",uts2,uas2,tugas2,nilaiakhir2,huruf2,status2));
         
         double ratanilaiakhir=(nilaiakhir1+nilaiakhir2)/2;
         String statussemester="";
         statussemester = (ratanilaiakhir >= 70 ? "LULUS (Rata-rata > 70)" : "TIDAK LULUS (Rata-rata < 70)");
-        System.out.println("\nRata-rata Nilai Akhir\t: "+ratanilaiakhir);
+        System.out.println(String.format("\nRata-rata Nilai Akhir\t: %.2f",ratanilaiakhir));
         System.out.println("Status Semester\t\t: "+statussemester);
 
         
