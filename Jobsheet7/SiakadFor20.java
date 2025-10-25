@@ -22,6 +22,7 @@ public class SiakadFor20 {
         System.out.println("nilai tertinggi: " + tertinggi);
         System.out.println("nilai terendah: " + terendah);
         
+        sc.close();
     }
     
    
