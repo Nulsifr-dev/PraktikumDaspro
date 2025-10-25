@@ -20,22 +20,18 @@ public class TiketBioskopMRA20 {
             System.out.print("Masukkan jumlah tiket yang dibeli: ");
             input = sc.nextLine();
 
-            // Keluar jika pengguna mengetik "ok"
             if (input.equalsIgnoreCase("ok")) {
                 System.out.println("\nTransaksi selesai. Terima kasih!\n");
                 break;
             }
 
-            // Coba ubah input menjadi angka
             jumlahTiket = Integer.parseInt(input);
 
-            // Jika negatif, minta ulang
             if (jumlahTiket < 0) {
                 System.out.println("Jumlah tiket tidak valid! Masukkan angka positif.\n");
                 continue;
             }
 
-            // Hitung total dan diskon
             totalHarga = jumlahTiket * HARGA_TIKET;
 
             if (jumlahTiket > 10) {
@@ -48,7 +44,6 @@ public class TiketBioskopMRA20 {
 
             totalHarga -= totalHarga * diskon;
 
-            // Tambahkan ke total harian
             totalSemuaTiket += jumlahTiket;
             totalSemuaPenjualan += totalHarga;
 
