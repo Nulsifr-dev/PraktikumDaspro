@@ -13,6 +13,7 @@ public class Star20 {
             System.out.print("*");
         }
 
+        sc.close();
 
     }
     
