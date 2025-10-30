@@ -14,7 +14,7 @@ public class Square20 {
             System.out.println();
         }
         
-
+        sc.close();
     }
     
 }
