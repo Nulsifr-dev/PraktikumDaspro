@@ -22,5 +22,12 @@ public class Kafe19 {
     public static void main(String[] args) {
         Menu("Andi", true);
     }
+
+    public static int hitungTotalHarga(int pilihanMenu, int banyakItem){
+        int[] hargaItems = {15000, 20000, 22000, 12000, 10000, 18000};
+
+        int hargaTotal = hargaItems[pilihanMenu]*banyakItem;
+        return hargaTotal;
+    }
     
 }
