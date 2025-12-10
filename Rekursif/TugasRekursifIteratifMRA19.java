@@ -13,7 +13,7 @@ public class TugasRekursifIteratifMRA19 {
 
     static int jumlahRekursif(int[] arr, int index) {
         if (index < 0) {
-            return 0; // basis
+            return 0;
         }
         return arr[index] + jumlahRekursif(arr, index - 1);
     }
